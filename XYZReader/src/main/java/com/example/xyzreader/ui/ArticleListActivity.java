@@ -40,8 +40,6 @@ import java.util.GregorianCalendar;
  * activity presents a grid of items as cards.
  */
 
-// AppCompatActivity
-// ActionBarActivity
 public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -62,6 +60,10 @@ public class ArticleListActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_article_list);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
 
         final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
