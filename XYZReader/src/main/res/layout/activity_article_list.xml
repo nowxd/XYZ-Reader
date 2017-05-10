@@ -9,9 +9,8 @@
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?colorPrimary"
-        android:elevation="8dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="@dimen/app_bar_elevation"
         >
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -26,8 +25,7 @@
                 android:layout_marginRight="@dimen/list_toolbar_side_margin"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
-                android:layout_gravity="bottom"
-                android:elevation="@dimen/tool_bar_elevation">
+                android:layout_gravity="bottom">
 
                 <ImageView
                     android:layout_width="wrap_content"
